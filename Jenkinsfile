@@ -8,7 +8,7 @@ environment {
     AWS_ACCOUNT_ID = '673611060385'
     FRONTEND_REPO = 'techchallenge-frontend'
     BACKEND_REPO = 'techchallenge-backend'
-
+}
 
     stages {
         stage('Checkout') {
