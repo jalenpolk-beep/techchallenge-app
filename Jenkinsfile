@@ -40,6 +40,24 @@ pipeline {
                 }
             }
         }
+
+stage('Build Frontend Docker Image') {
+    steps {
+        dir('frontend') {
+            sh 'docker build -t techchallenge-frontend .'
+        }
     }
+}
+
+stage('Build Backend Docker Image') {
+    steps {
+        dir('backend') {
+            sh 'docker build -t techchallenge-backend .'
+        }
+    }
+}   
+
+ }
+
 }
 
