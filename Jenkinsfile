@@ -1,12 +1,14 @@
+    
+pipeline {
+    agent any
+
+
 environment {
     AWS_REGION = 'us-east-1'
     AWS_ACCOUNT_ID = '673611060385'
     FRONTEND_REPO = 'techchallenge-frontend'
     BACKEND_REPO = 'techchallenge-backend'
-}
 
-pipeline {
-    agent any
 
     stages {
         stage('Checkout') {
